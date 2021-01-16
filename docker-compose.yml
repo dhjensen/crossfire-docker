@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  crossfire:
+    image: $IMAGE:$TAG
+    command: chain-maind start
+    restart: unless-stopped
+    ports:
+     - 26656:26656/tcp
+    volumes:
+     - $DATA:/chain-main
