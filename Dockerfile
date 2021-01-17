@@ -1,7 +1,7 @@
 # curl -LOJ https://github.com/crypto-com/chain-main/releases/download/v0.8.0-crossfire/chain-main_0.8.0-crossfire_Linux_x86_64.tar.gz
 # tar -zxvf chain-main_0.8.0-crossfire_Linux_x86_64.tar.gz
 
-ARG VERSION=0.8.0-crossfire
+ARG VERSION=0.8.0-croeseid
 ARG ARCHIVE_PATH=/tmp/chain-maind.tar.gz
 
 FROM debian:buster AS unpacker
