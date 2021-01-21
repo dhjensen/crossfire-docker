@@ -5,6 +5,12 @@ services:
     image: $IMAGE:$TAG
     command: chain-maind start
     restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "2g"
+        max-file: "3"
+        compress: "true"
     ports:
      - 26656:26656/tcp
     volumes:
