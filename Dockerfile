@@ -15,7 +15,10 @@ RUN tar -xf ${ARCHIVE_PATH} -C /usr/bin chain-maind
 FROM debian:buster-slim
 
 RUN apt-get update \
-      && apt-get install -y jq=1.5+dfsg-2+b1 --no-install-recommends \
+      && apt-get install -y \
+      jq=1.5+dfsg-2+b1 \
+      curl=7.64.0-4+deb10u1 \
+      --no-install-recommends \
       && apt-get clean \
       && rm -rf /var/lib/apt/lists/*
 
