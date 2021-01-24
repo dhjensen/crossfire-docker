@@ -2,6 +2,7 @@ version: '3'
 
 services:
   crossfire:
+    build: .
     image: $IMAGE:$TAG
     command: chain-maind start
     restart: unless-stopped
