@@ -1,6 +1,10 @@
 # Crossfire-docker
 
 ```bash
+docker-compose up -d --build
+```
+
+```bash
 docker build . -t dhjensen/crossfire:test
 ```
 
